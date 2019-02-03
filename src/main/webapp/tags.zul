@@ -1,0 +1,28 @@
+<zk>
+    <window id="wndTags" apply="com.helloingob.accsum.controller.TagsController" width="1000px" height="700px">
+        <borderlayout hflex="true" vflex="true">
+            <center border="none">
+                <vlayout hflex="true" vflex="true">
+                    <textbox hflex="true" id="tbxSearch" placeholder="&#xF002; Search..." style="font-family:Arial, FontAwesome" />
+                    <listbox id="lbxTags" vflex="true" hflex="true">
+                        <listhead>
+                            <listheader label="&#xf02b;" sort="auto" style="font-family:Arial, FontAwesome" />
+                            <listheader id="lhdVisible" label="&#xf06e;" width="50px" style="font-family:Arial, FontAwesome" align="center" />
+                        </listhead>
+                    </listbox>
+                    <hbox>
+                        <button id="btnAdd" label="&#xf067;" width="85px" style="font-family:Arial, FontAwesome" />
+                        <button id="btnEdit" label="&#xf040;" width="85px" style="font-family:Arial, FontAwesome" />
+                        <separator width="30px" />
+                        <button id="btnDelete" label="&#xf068;" width="85px" style="font-family:Arial, FontAwesome" />
+                    </hbox>
+                </vlayout>
+            </center>
+            <south border="none">
+                <hbox hflex="true" pack="end">
+                    <button id="btnOk" label="Ok" autodisable="self" width="85px" />
+                </hbox>
+            </south>
+        </borderlayout>
+    </window>
+</zk>

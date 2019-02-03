@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk>
+    <system-config>
+        <upload-charset-finder-class>com.helloingob.AccountSummary.utils.TikaCharsetFinder</upload-charset-finder-class>
+    </system-config>
+
+</zk>

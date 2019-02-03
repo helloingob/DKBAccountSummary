@@ -1,0 +1,30 @@
+<zk>
+    <window id="wndTransferEdit" width="500px" height="550px" apply="com.helloingob.accsum.controller.TransferEditController">
+        <borderlayout hflex="true" vflex="true">
+            <center border="none">
+                <vlayout hflex="true" vflex="true">
+                    <textbox id="tbxTitle" hflex="true" disabled="true" />
+                    <textbox id="tbxComment" hflex="true" placeholder="&#xf0e5; Comment" style="font-family:Arial, FontAwesome" />
+                    <separator />
+                    <hbox hflex="true" align="center">
+                        <combobox hflex="true" id="cbxTags" placeholder="&#xf02b;" style="font-family:Arial, FontAwesome" readonly="true" />
+                        <button id="btnAdd" label="&#xf067;" width="85px" style="font-family:Arial, FontAwesome" />
+                    </hbox>
+                    <vlayout hflex="true" vflex="true">
+                        <listbox id="lbxTags" vflex="true" hflex="true">
+                            <listhead>
+                                <listheader label="&#xf02c;" sort="auto" style="font-family:Arial, FontAwesome" />
+                            </listhead>
+                        </listbox>
+                    </vlayout>
+                </vlayout>
+            </center>
+            <south border="none">
+                <hbox hflex="true" pack="end">
+                    <button label="Cancel" onClick="wndTransferEdit.detach()" width="85px" />
+                    <button id="btnOk" label="Ok" width="85px" />
+                </hbox>
+            </south>
+        </borderlayout>
+    </window>
+</zk>

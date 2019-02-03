@@ -1,0 +1,28 @@
+<zk>
+    <window id="wndTag" width="500px" height="270px" apply="com.helloingob.accsum.controller.TagController">
+        <borderlayout hflex="true" vflex="true">
+            <center border="none">
+                <vlayout hflex="true">
+                    <hbox hflex="true" align="center">
+                        <label value="Title*" hflex="1" />
+                        <textbox id="tbxTitle" hflex="2" />
+                    </hbox>
+                    <separator />
+                    <hbox hflex="true" align="center">
+                        <label value="Visible in chart*" hflex="1" />
+                        <checkbox id="chbxVisible" hflex="2" />
+                    </hbox>
+                </vlayout>
+            </center>
+            <south border="none">
+                <hbox hflex="true" pack="end">
+                    <hlayout vflex="true" hflex="true">
+                        <label value="* mandatory" style="font-style: italic;" />
+                    </hlayout>
+                    <button label="Cancel" onClick="wndTag.detach();" width="85px" />
+                    <button id="btnOk" label="Ok" width="85px" />
+                </hbox>
+            </south>
+        </borderlayout>
+    </window>
+</zk>

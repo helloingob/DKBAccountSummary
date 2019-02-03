@@ -1,0 +1,33 @@
+<zk>
+    <window id="wndImport" apply="com.helloingob.accsum.controller.ImportController" width="1000px" height="700px">
+        <borderlayout hflex="true" vflex="true">
+            <north border="none">
+                <hbox align="center">
+                    <button label="&#xf093;" id="btnImport" style="font-family:Arial, FontAwesome" upload="true,maxsize=-1,accept=text/csv" width="85px" />
+                    <checkbox id="chbxDuplicate" label="Ignore duplicates" />
+                </hbox>
+            </north>
+            <center border="none">
+                <vlayout hflex="true" vflex="true">
+                    <listbox id="lbxActivities" vflex="true" hflex="true" emptyMessage="No tagless transfers found.">
+                        <listhead>
+                            <listheader id="lhdDate" label="&#xf073;" align="center" width="100px" style="font-family:Arial, FontAwesome" />
+                            <listheader id="lhdAmount" label="&#xf0d6;" align="center" width="90px" style="font-family:Arial, FontAwesome" />
+                            <listheader sort="auto" label="&#xf007;" style="font-family:Arial, FontAwesome" />
+                            <listheader sort="auto" label="&#xf02c;" style="font-family:Arial, FontAwesome" />
+                            <listheader hflex="min" sort="auto" label="&#xf075;" style="font-family:Arial, FontAwesome" />
+                        </listhead>
+                    </listbox>
+                    <hbox>
+                        <button label="&#xf040;" id="btnEdit" style="font-family:Arial, FontAwesome" width="85px" />
+                    </hbox>
+                </vlayout>
+            </center>
+            <south border="none">
+                <hbox hflex="true" pack="end">
+                    <button id="btnOk" label="Ok" autodisable="self" width="85px" />
+                </hbox>
+            </south>
+        </borderlayout>
+    </window>
+</zk>

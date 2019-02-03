@@ -1,0 +1,44 @@
+<zk>
+    <script src="/script/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/script/highcharts/6.0.2/highcharts.js"></script>
+    <script src="/script/highcharts/6.0.2/modules/no-data-to-display.js"></script>
+    <script src="/css/font-awesome/4.7.0/font-awesome.css"></script>
+    <borderlayout apply="com.helloingob.accsum.controller.IndexController" hflex="true" vflex="true">
+        <center border="none">
+            <hbox pack="center" hflex="true" vflex="true">
+                <div id="divContent" width="1200px;" vflex="true">
+                    <vlayout hflex="true" vflex="true">
+                        <hbox id="hbxChart" />
+                        <hbox hflex="true" align="center">
+                            <datebox id="dbxFrom" hflex="true" format="dd.MM.yyyy" readonly="true" />
+                            <button label="&#xf049;" id="btnBackward" style="font-family:Arial, FontAwesome" width="85px" />
+                            <label value="&#xf07e;" style="font-family:Arial, FontAwesome" />
+                            <button label="&#xf050;" id="btnForward" style="font-family:Arial, FontAwesome" width="85px" />
+                            <datebox id="dbxTo" showTodayLink="true" hflex="true" format="dd.MM.yyyy" readonly="true" />
+                            <button label="&#xf04b;" id="btnGo" style="font-family:Arial, FontAwesome" width="85px" />
+                        </hbox>
+                        <hlayout hflex="true">
+                            <combobox hflex="true" id="cbxSearch" placeholder="&#xF002; Search..." style="font-family:Arial, FontAwesome" />
+                        </hlayout>
+                        <listbox id="lbxActivities" vflex="true" hflex="true" emptyMessage="No transfers found.">
+                            <listhead>
+                                <listheader id="lhdDate" label="&#xf073;" align="center" width="100px" style="font-family:Arial, FontAwesome" />
+                                <listheader id="lhdAmount" label="&#xf0d6;" align="center" width="90px" style="font-family:Arial, FontAwesome" />
+                                <listheader sort="auto" label="&#xf007;" style="font-family:Arial, FontAwesome" />
+                                <listheader hflex="min" sort="auto" label="&#xf02c;" style="font-family:Arial, FontAwesome" />
+                                <listheader width="150px" sort="auto" label="&#xf075;" style="font-family:Arial, FontAwesome" />
+                            </listhead>
+                        </listbox>
+                        <hlayout hflex="true">
+                            <hbox hflex="true" pack="start">
+                                <button label="&#xf040;" id="btnEdit" style="font-family:Arial, FontAwesome" width="85px" />
+                            </hbox>
+                            <button label="&#xf093;" id="btnImport" style="font-family:Arial, FontAwesome" width="85px" />
+                            <button label="&#xf02c;" id="btnTags" style="font-family:Arial, FontAwesome" width="85px" />
+                        </hlayout>
+                    </vlayout>
+                </div>
+            </hbox>
+        </center>
+    </borderlayout>
+</zk>
